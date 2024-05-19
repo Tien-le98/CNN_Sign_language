@@ -22,7 +22,7 @@ The densely connect model is built with 1 Flatten layer for input data, three hi
 
 According to the table of the maximum validation accuracy for each combination of activation function, optimizer and learning rate, the model which has the highest validation accuracy is a densely connected model with **Elu** activation function, its optimizer is **Stochastic Gradient Descent** with learning rate of **0.01**. The maximum validation accuracy of this model is about 0.73. However, according to this model's plot of performance, its training accuracy is about 0.925, hence there is a large difference between its training accuracy and its validation accuracy (nearly 0.2), which can indicate that this model can be overfitting. Therefore, some methods such as Regularization, Weight initialization and Dropout regularization are used to mitigate this overfitting problem for this best densely connected model.
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/DNN" align="center" height="300" width="500" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/DNN" align="center" height="300" width="700" ></a>
 
 ** Apply Regularization methods on the best densely connected model**
 
@@ -38,7 +38,11 @@ The CNN model is built with Convolutional layers 3x3, strides equal to 1, Max Po
 
 The best CNN model is the model with Selu activation function, Adam optimizer and learning rate of 0.001. Its training accuracy is 1, and its maximum validation accuracy is around 0.9136. The difference between its validation accuracy and training accuracy is about 0.0864. 
 
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Best_CNN" align="center" height="300" width="700" ></a>
+
 The second best CNN model is the model with Selu activation function, Nadam optimizer and learning rate of 0.001. Its training accuracy is 1, and its maximum validation accuracy is about 0.9124. The difference between its validation accuracy and training accuracy is also about 0.0876. 
+
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="300" width="700" ></a>
 
 These two best models are chosen to apply some regularization methods to mitigate overfitting problem.
 
