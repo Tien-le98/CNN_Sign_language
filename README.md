@@ -24,7 +24,7 @@ According to the table of the maximum validation accuracy for each combination o
 
 <a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/DNN" align="center" height="300" width="700" ></a>
 
-** Apply Regularization methods on the best densely connected model**
+**Apply Regularization methods on the best densely connected model**
 
 + According to the performance of this best densely connected model after using **L2 Regularizer**, after epoch 22, its training accuracy is about 0.6532 and its validation accuracy is about 0.524. The difference between these two values is about 0.13. Hence, this method of l2 Regulization just can slightly reduce the overfitting problem of this model since the gap between these two values of this model before apply l2 regularization is about 0.2. However, the validation accuracy of this model after applying l2 Regularization is much lower than its original validation accuracy since the model's validation accuracy before applying this l2 regularization method is about 0.73.
 
@@ -38,11 +38,11 @@ The CNN model is built with Convolutional layers 3x3, strides equal to 1, Max Po
 
 The best CNN model is the model with Selu activation function, Adam optimizer and learning rate of 0.001. Its training accuracy is 1, and its maximum validation accuracy is around 0.9136. The difference between its validation accuracy and training accuracy is about 0.0864. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Best_CNN" align="center" height="300" width="700" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Best_CNN" align="center" height="300" width="500" ></a>
 
 The second best CNN model is the model with Selu activation function, Nadam optimizer and learning rate of 0.001. Its training accuracy is 1, and its maximum validation accuracy is about 0.9124. The difference between its validation accuracy and training accuracy is also about 0.0876. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="300" width="700" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="300" width="500" ></a>
 
 These two best models are chosen to apply some regularization methods to mitigate overfitting problem.
 
@@ -69,6 +69,8 @@ These two best models are chosen to apply some regularization methods to mitigat
 The best CNN model with Selu activation function, Adam optimizer and learning rate of 0.001 converges with the validation accuracy of 0.9175, and the second best CNN model with Selu activation function, Nadam optimizer and learning rate of 0.001 converges with the validation accuracy is 0.9099. Additionally, the difference in the performance of these two best models is significant because the p-value in comparing these two best models is below 0.05, therefore, the best CNN model with Selu activation function, Adam optimizer and learning rate of 0.001 is chosen to make predictions on the testing data.
 
 #### 4. Model predictions
+
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="300" width="500" ></a>
 
 According to the confusion matrix normalized by true labels, only 56% observations of the letter 'T' are predicted correctly. In addition, the letter 'O' has only 69% observations which are predicted correctly, and the letter 'R' has only 78% observations which are predicted correctly. The remaining letters have around 80% observations or more being predicted correctly. The letters 'A', 'C', 'F', 'L', 'W' are completely predicted correctly.
 
