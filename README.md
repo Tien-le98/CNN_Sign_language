@@ -9,7 +9,7 @@ Deep Learning models were applied on the dataset after performing data cleaning,
 ### Baseline model
 For a baseline model, a densely connected model with Stochastic Gradient Descent optimizer is built, its learning rate is 0.01 by default, batch size is 32 and the number of epochs are 30. In this network, there is 3 hidden layers. The first hidden layer contains 64 neurons and uses Elu activation function. The second hidden layer contains 32 neurons and uses Elu activation function. The third hidden layer contains 16 neurons and uses Elu activation function. The output layer contains 24 neurons (since there are 24 possible outcomes of labels) and uses Softmax activation function. The loss function is Sparse categorical crossentropy since labels are encoded as integers from 0 to 23.
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Baseline_model" align="center" height="500" width="700" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Baseline_model" align="center" height="500" width="500" ></a>
 
 According to the plot of training loss, training accuracy, validation loss and validation accuracy of the baseline model above, the training accuracy and validation accuracy of this baseline model converge after 20 epochs. However, the difference between training loss and validation loss, as well as training accuracy and validation accuracy are quite large, which can indicate that this baseline model can be overfitting. For example, after epoch 30, the training accuracy is 0.9942 while the validation accuracy is only 0.7016, hence the gap between these two values is about 0.3.
 
