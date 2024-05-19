@@ -70,9 +70,11 @@ The best CNN model with Selu activation function, Adam optimizer and learning ra
 
 #### 4. Model predictions
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="300" width="500" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Conf_mat_true_label" align="center" height="300" width="500" ></a>
 
 According to the confusion matrix normalized by true labels, only 56% observations of the letter 'T' are predicted correctly. In addition, the letter 'O' has only 69% observations which are predicted correctly, and the letter 'R' has only 78% observations which are predicted correctly. The remaining letters have around 80% observations or more being predicted correctly. The letters 'A', 'C', 'F', 'L', 'W' are completely predicted correctly.
+
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Conf_mat_predicted_label" align="center" height="300" width="500" ></a>
 
 According to the confusion matrix normalized by predicted labels and the table of accuracy score of the final CNN model above, the letter 'T' has the lowest accuracy score (only 0.67) because among all letters are predicted as 'T', only 67% observations are truely 'T'. The letter 'S' has the second lowest accuracy score because among all letters are predicted as 'S', only about 74% observations are truely 'S'.
 
