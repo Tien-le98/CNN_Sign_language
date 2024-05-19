@@ -76,7 +76,7 @@ According to the confusion matrix normalized by true labels, only 56% observatio
 
 <a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Conf_mat_predicted_label" align="center" height="500" width="700" ></a>
 
-According to the confusion matrix normalized by predicted labels and the table of accuracy score of the final CNN model above, the letter 'T' has the lowest accuracy score (only 0.67) because among all letters are predicted as 'T', only 67% observations are truely 'T'. The letter 'S' has the second lowest accuracy score because among all letters are predicted as 'S', only about 74% observations are truely 'S'.
+According to the confusion matrix normalized by predicted labels, the letter 'T' has the lowest accuracy score (only 0.67) because among all letters are predicted as 'T', only 67% observations are truely 'T'. The letter 'S' has the second lowest accuracy score because among all letters are predicted as 'S', only about 74% observations are truely 'S'.
 
 <a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Misclassification" align="right" height="400" width="200" ></a>
 
