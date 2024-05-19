@@ -78,7 +78,7 @@ According to the confusion matrix normalized by true labels, only 56% observatio
 
 According to the confusion matrix normalized by predicted labels and the table of accuracy score of the final CNN model above, the letter 'T' has the lowest accuracy score (only 0.67) because among all letters are predicted as 'T', only 67% observations are truely 'T'. The letter 'S' has the second lowest accuracy score because among all letters are predicted as 'S', only about 74% observations are truely 'S'.
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Misclassification" align="right" height="500" width="200" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Misclassification" align="right" height="400" width="200" ></a>
 
 According to the table illustrating the number of the proportion of misclassification for each letter, the letter 'T' is the most common letter which are predicted incorrectly. Because in all of misclassifications of this final CNN model, the number of missification of the letter 'T' is 51 (accounts for around 15% of total number of misclassification). Particularly, the letter 'T' is misclassified as 'H', 'X', 'L', and 'Y' according to the table showing the count and the proportion of misclassification for each combination of True labels and Predicted labels above. The second most common letter which are misclassified is the letter 'H' with about 11% of total number of misclassification. This letter 'H' is more misclassified as 'G' and 'M'. The third most misclassified letter is the letter 'O' with about 10.8% of total number of misclassification, and this letter is more likely to be predicted as 'N' and 'F'.
 
