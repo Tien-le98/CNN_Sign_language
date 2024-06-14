@@ -5,7 +5,7 @@ _Author: Clara Le_
 _Date: 17/8/2023_
 
 ---
-Deep Learning models were applied on the dataset after performing data cleaning, spliting, and preprocessing.
+Deep Learning models were applied on the dataset after performing data cleaning, spliting, and preprocessing, using Python with [code](https://github.com/Tien-le98/CNN_Sign_language/blob/main/Code_file.ipynb).
 ### Baseline model
 For a baseline model, a densely connected model with Stochastic Gradient Descent optimizer is built, its learning rate is 0.01 by default, batch size is 32 and the number of epochs are 30. In this network, there is 3 hidden layers. The first hidden layer contains 64 neurons and uses Elu activation function. The second hidden layer contains 32 neurons and uses Elu activation function. The third hidden layer contains 16 neurons and uses Elu activation function. The output layer contains 24 neurons (since there are 24 possible outcomes of labels) and uses Softmax activation function. The loss function is Sparse categorical crossentropy since labels are encoded as integers from 0 to 23.
 
