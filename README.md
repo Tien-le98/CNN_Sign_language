@@ -6,17 +6,18 @@ _Date: 17/8/2023_
 
 ---
 Deep Learning models were applied on the dataset after performing data cleaning, spliting, and preprocessing, using Python with [code](https://github.com/Tien-le98/CNN_Sign_language/blob/main/Code_file.ipynb).
-### Baseline model
+
+## Baseline model
 For a baseline model, a densely connected model with Stochastic Gradient Descent optimizer is built, its learning rate is 0.01 by default, batch size is 32 and the number of epochs are 30. In this network, there is 3 hidden layers. The first hidden layer contains 64 neurons and uses Elu activation function. The second hidden layer contains 32 neurons and uses Elu activation function. The third hidden layer contains 16 neurons and uses Elu activation function. The output layer contains 24 neurons (since there are 24 possible outcomes of labels) and uses Softmax activation function. The loss function is Sparse categorical crossentropy since labels are encoded as integers from 0 to 23.
 
 <a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Baseline_model" align="center" height="300" width="500" ></a>
 
 According to the plot of training loss, training accuracy, validation loss and validation accuracy of the baseline model above, the training accuracy and validation accuracy of this baseline model converge after 20 epochs. However, the difference between training loss and validation loss, as well as training accuracy and validation accuracy are quite large, which can indicate that this baseline model can be overfitting. For example, after epoch 30, the training accuracy is 0.9942 while the validation accuracy is only 0.7016, hence the gap between these two values is about 0.3.
 
-### Train and optimize a Densely connected and a Convolutional neural network model
+## Train and optimize a Densely connected and a Convolutional neural network model
 In training and optimizing process, there are some hyperparameters that need to be tuned in order to find the optimized model which are the activation function ('actfn' list including Elu, Leaky Relu and Selu activation functions), the optimizer ('optimizer' list including Stochastic Gradient Descent, Adam, and Nadam optimizer) and its learning rate ('learningrate' list containing values of 0.01 and 0.001). These hyperparameters are used for optimizing both the Densely connected model and the Convolutional neural network (CNN) model. Early stopping is also defined with patience of 5, and monitored by validation loss values. Early stopping is used to prevent models from overfitting since the baseline model raises a signal of overfitting problem.
 
-#### 1. Train and optimize a Densely connected model
+### 1. Train and optimize a Densely connected model
 
 The densely connect model is built with 1 Flatten layer for input data, three hidden layers with size of 64, 32, and 16 respectively, and 1 Dense layer including 24 neurons for the output. The used loss function is Sparse categorical crossentropy since labels are encoding as integers from 0 to 23. In general, the maximum validation accuracy scores of these densely connected models range from about 0.51 to 0.73. Additionally, all of these densely connected models can be overfitting since the differences between their training accuracy and their validation accuracy are quite large (from around 0.2 to 0.3). 
 
@@ -32,7 +33,7 @@ According to the table of the maximum validation accuracy for each combination o
 
 + After using **Dropout regularization** method, after epoch 24, this model converges with its training accuracy is about 0.8912 and its validation accuracy is about 0.7292. The difference between these two values is about 0.16. Hence, this method of Dropout regulation also just slightly reduce the gap between the training accuracy and the validation accuracy of the model since the gap between these two values of this model before apply Dropout regularization is about 0.2, but it does not improve the validation accuracy much.
 
-#### 2. Train and optimize a Convolutional Neural Network (CNN) model
+### 2. Train and optimize a Convolutional Neural Network (CNN) model
 
 The CNN model is built with Convolutional layers 3x3, strides equal to 1, Max Pooling layers 2x2, 1 Flatten layer, and 1 Dense layer including 24 neurons for the output. The used loss function is Sparse categorical crossentropy since labels are encoding as integers (from 0 to 23). Early stopping is also defined with patience of 5, and monitored by validation loss values. Early stopping is used to prevent model from overfitting. In general, these CNN models gain better performance since their maximum validation accuracy are larger than the figures for other densely connected models. Most of the maximum validation accuracy scores of these CNN models range from about 0.76 to 0.91. Additionally, the differences between training accuracy and validation accuracy of these CNN models are not large as the figures for other densely connected models, since they are only from around 0.1 to 0.2. Although these differences are not large, they still can indicate overfitting problem, therefore, in order to solve this problem, three methods such as Regularization, Weight initialization and Dropout regularization are used.
 
@@ -64,11 +65,11 @@ These two best models are chosen to apply some regularization methods to mitigat
 
 > In conclusion, in comparison with the best densely connected model, the best CNN model (with Selu activation function, Adam optimizer and learning rate of 0.001), and the second best CNN model (with Selu activation function, Nadam optimizer and learning rate of 0.001) obtain better validation accuracy score. Therefore, these two best models are used in prediction process. In addition, three methods (Regularization, Weight initialization and Dropout regularization) do not reduce the difference between training accuracy and validation accuracy, hence they can not mitigate the overfitting problem. Therefore, these two best CNN models are used to generate predictions without applying any regularization methods.
 
-#### 3. Perform a statistical test between the best and the second best models
+### 3. Perform a statistical test between the best and the second best models
 
 The best CNN model with Selu activation function, Adam optimizer and learning rate of 0.001 converges with the validation accuracy of 0.9175, and the second best CNN model with Selu activation function, Nadam optimizer and learning rate of 0.001 converges with the validation accuracy is 0.9099. Additionally, the difference in the performance of these two best models is significant because the p-value in comparing these two best models is below 0.05, therefore, the best CNN model with Selu activation function, Adam optimizer and learning rate of 0.001 is chosen to make predictions on the testing data.
 
-#### 4. Model predictions
+### 4. Model predictions
 
 <a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Conf_mat_true_label" align="center" height="500" width="700" ></a>
 
