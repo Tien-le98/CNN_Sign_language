@@ -23,7 +23,7 @@ The densely connect model is built with 1 Flatten layer for input data, three hi
 
 According to the table of the maximum validation accuracy for each combination of activation function, optimizer and learning rate, the model which has the highest validation accuracy is a densely connected model with **Elu** activation function, its optimizer is **Stochastic Gradient Descent** with learning rate of **0.01**. The maximum validation accuracy of this model is about 0.73. However, according to this model's plot of performance, its training accuracy is about 0.925, hence there is a large difference between its training accuracy and its validation accuracy (nearly 0.2), which can indicate that this model can be overfitting. Therefore, some methods such as Regularization, Weight initialization and Dropout regularization are used to mitigate this overfitting problem for this best densely connected model.
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/DNN" align="center" height="400" width="800" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/DNN" align="center" height="400" width="900" ></a>
 
 **Apply Regularization methods on the best densely connected model**
 
