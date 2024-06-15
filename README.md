@@ -39,11 +39,11 @@ The CNN model is built with Convolutional layers 3x3, strides equal to 1, Max Po
 
 **The best CNN model** is the model with **Selu** activation function, **Adam** optimizer and learning rate of **0.001**. Its training accuracy is 1, and its maximum validation accuracy is around 0.9136. The difference between its validation accuracy and training accuracy is about 0.0864. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Best_CNN" align="center" height="300" width="490" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/Best_CNN" align="center" height="400" width="700" ></a>
 
 **The second best CNN model** is the model with **Selu** activation function, **Nadam** optimizer and learning rate of **0.001**. Its training accuracy is 1, and its maximum validation accuracy is about 0.9124. The difference between its validation accuracy and training accuracy is also about 0.0876. 
 
-<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="300" width="500" ></a>
+<a href="url"><img src="https://github.com/Tien-le98/CNN_Sign_language/blob/main/second_best_CNN" align="center" height="400" width="700" ></a>
 
 These two best models are chosen to apply some regularization methods to mitigate overfitting problem.
 
