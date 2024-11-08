@@ -1,6 +1,6 @@
 # Sign Language Image Classification using Deep Learning
 
-_Author: Clara Le_
+_Author: Pham Thuy Tien (Clara) Le_
 
 _Date: 17/8/2023_
 
